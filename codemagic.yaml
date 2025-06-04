@@ -2,7 +2,6 @@ workflows:
   android:
     name: Build Android APK
     max_build_duration: 15
-project_root: android_app
     environment:
       vars:
         PACKAGE_NAME: "com.example.inventory"
@@ -13,3 +12,4 @@ project_root: android_app
           ./gradlew assembleDebug
     artifacts:
       - app/build/outputs/**/*.apk
+
