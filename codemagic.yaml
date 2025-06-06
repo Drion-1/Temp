@@ -6,10 +6,10 @@ workflows:
       flutter: stable
       java: 17
     scripts:
-      - chmod +x ./gradlew
-      - ./gradlew clean assembleDebug
+      - flutter pub get
+      - flutter build apk --debug
     artifacts:
-      - app/build/outputs/**/*.apk
+      - build/app/outputs/flutter-apk/app-debug.apk
     publishing:
       email:
         recipients:
