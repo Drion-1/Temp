@@ -6,7 +6,7 @@ workflows:
       flutter: stable
       java: 17
     scripts:
-      - echo "Fetching packages..."
+      - echo "Fetching dependencies..."
       - flutter pub get
       - echo "Building APK..."
       - flutter build apk --debug
