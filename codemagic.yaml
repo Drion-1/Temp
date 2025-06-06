@@ -6,11 +6,10 @@ workflows:
       flutter: stable
       java: 17
     scripts:
-      - cd inventory-app
-      - chmod +x gradlew
+      - chmod +x ./gradlew
       - ./gradlew clean assembleDebug
     artifacts:
-      - inventory-app/app/build/outputs/**/*.apk
+      - app/build/outputs/**/*.apk
     publishing:
       email:
         recipients:
