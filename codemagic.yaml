@@ -7,10 +7,10 @@ workflows:
       java: 17
     scripts:
       - cd inventory-app
-      - chmod +x gradlew
-      - ./gradlew clean assembleDebug
+      - chmod +x ../gradlew
+      - ../gradlew clean assembleDebug
     artifacts:
-      - app/build/outputs/**/*.apk
+      - inventory-app/app/build/outputs/**/*.apk
     publishing:
       email:
         recipients:
