@@ -6,10 +6,10 @@ workflows:
       flutter: stable
       java: 17
     scripts:
-  - cd inventory-app
-  - ./gradlew clean assembleDebug
+      - "cd inventory-app"
+      - "./gradlew clean assembleDebug"
     artifacts:
-      - app/build/outputs/**/*.apk
+      - inventory-app/app/build/outputs/**/*.apk
     publishing:
       email:
         recipients:
