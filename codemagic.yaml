@@ -6,8 +6,8 @@ workflows:
       flutter: stable
       java: 17
     scripts:
-      - echo "Running Gradle build..."
-      - ./gradlew clean assembleDebug
+  - cd inventory-app
+  - ./gradlew clean assembleDebug
     artifacts:
       - app/build/outputs/**/*.apk
     publishing:
