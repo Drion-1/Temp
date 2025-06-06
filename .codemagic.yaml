@@ -14,4 +14,4 @@ workflows:
     publishing:
       email:
         recipients:
-          - your@email.com
+          - andrey@ppsspb.ru
