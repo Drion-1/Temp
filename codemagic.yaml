@@ -3,8 +3,7 @@ workflows:
     name: Build Android APK
     max_build_duration: 15
     environment:
-      android:
-        image: latest
+      image: android
       java: 17
     scripts:
       - echo "Running Gradle build..."
